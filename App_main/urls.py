@@ -4,7 +4,7 @@ from App_main.views import *
 app_name = 'App_main'
 
 urlpatterns = [
-    path('dashboard/', DashboardAPIView.as_view()),
+    path('librarian-dashboard/', DashboardAPIView.as_view()),
     path('add-new-book/', AddNewBookAPIView.as_view()),
     path('update-book/<int:id>/', UpdateBookAPIView.as_view()),
     path('remove-book/<int:id>/', RemoveBookAPIView.as_view()),
